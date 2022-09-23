@@ -1,0 +1,6 @@
+Red wins:
+1
+Blue wins:
+0
+Green wins:
+3
