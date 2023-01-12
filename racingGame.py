@@ -1,4 +1,4 @@
-
+# Written by John Burton
 from pydoc import ModuleScanner
 import pygame
 import random
@@ -47,12 +47,12 @@ oneText = font.render('1!' , True , WHITE)
 radius = 25
 
 # object current co-ordinates 
-red_x = 100
-red_y = 100
-blue_x = 400
-blue_y = 400
-green_x = 50
-green_y = 50
+red_x = random.randrange(25, 575)
+red_y = random.randrange(25, 575)
+blue_x = random.randrange(25, 575)
+blue_y = random.randrange(25, 575)
+green_x = random.randrange(25, 575)
+green_y = random.randrange(25, 575)
 
 # velocity / speed of movement
 red_vel = 1
@@ -306,7 +306,7 @@ while isRunning:
                 redLaps = 1
                 blueLaps = 1
                 greenLaps = 1
-                endLapsNumber = 2
+                endLapsNumber = 6
                 endLaps = False
                 winner = ''
                 
@@ -322,7 +322,7 @@ while isRunning:
 
         text = font.render(('Red: Lap '+ str(redLaps)), True, RED, WHITE)
         text2 = font.render(('Green: Lap '+ str(greenLaps)), True, GREEN, WHITE)
-        text3 = font.render(('Blue: Lap '+ str(greenLaps)), True, BLUE, WHITE)
+        text3 = font.render(('Blue: Lap '+ str(blueLaps)), True, BLUE, WHITE)
 
         window.blit(text, textRect)
         window.blit(text2, textRect2)

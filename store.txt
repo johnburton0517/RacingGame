@@ -3,4 +3,4 @@ Red wins:
 Blue wins:
 0
 Green wins:
-3
+0
